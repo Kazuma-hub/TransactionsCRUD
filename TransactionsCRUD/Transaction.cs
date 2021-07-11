@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TransactionsCRUD
 {
@@ -22,11 +18,6 @@ namespace TransactionsCRUD
             TransactionTime = DateTime.Now;
             TransactionId = new Guid().ToString();
             
-        }
-
-        public void Show()
-        {
-            Console.WriteLine($"ID: {TransactionId}/nСумма транзакции: {TransactionSum}/nВид транзакции: {TransactionDirection}/nДата транзакции: {TransactionTime}");
         }
 
 

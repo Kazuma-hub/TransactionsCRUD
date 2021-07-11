@@ -34,7 +34,7 @@ namespace TransactionsCRUD
             this.typeOfTransactionLabel = new System.Windows.Forms.Label();
             this.inRadioButton = new System.Windows.Forms.RadioButton();
             this.outRadioButton = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.createButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // sumTextBox
@@ -84,21 +84,22 @@ namespace TransactionsCRUD
             this.outRadioButton.Text = "Исходящий перевод";
             this.outRadioButton.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // createButton
             // 
-            this.button1.Location = new System.Drawing.Point(270, 301);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(177, 36);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Создать транзакцию";
-            this.button1.UseVisualStyleBackColor = true;
+            this.createButton.Location = new System.Drawing.Point(270, 301);
+            this.createButton.Name = "createButton";
+            this.createButton.Size = new System.Drawing.Size(177, 36);
+            this.createButton.TabIndex = 6;
+            this.createButton.Text = "Создать транзакцию";
+            this.createButton.UseVisualStyleBackColor = true;
+            this.createButton.Click += new System.EventHandler(this.createButton_Click);
             // 
             // TransactionCreateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.createButton);
             this.Controls.Add(this.outRadioButton);
             this.Controls.Add(this.inRadioButton);
             this.Controls.Add(this.typeOfTransactionLabel);
@@ -118,6 +119,6 @@ namespace TransactionsCRUD
         private System.Windows.Forms.Label typeOfTransactionLabel;
         private System.Windows.Forms.RadioButton inRadioButton;
         private System.Windows.Forms.RadioButton outRadioButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button createButton;
     }
 }
