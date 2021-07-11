@@ -31,6 +31,7 @@ namespace TransactionsCRUD
 
             Transaction transaction = new Transaction(Convert.ToInt32(sumTextBox.Text), transactionDirection);
             BankTransactions.bankTransactions.Add(transaction);
+            this.Close();
 
         } 
     }
